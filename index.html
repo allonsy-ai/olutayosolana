@@ -101,7 +101,7 @@ nav.links a:not(.btn)[aria-current] { color: var(--field-ink); text-decoration: 
 .led { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 25%, transparent); flex: none; }
 @media (prefers-reduced-motion: no-preference) { .led.live { animation: blink 2.4s var(--ease) infinite; } }
 @keyframes blink { 50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--amber) 0%, transparent); } }
-.hero h1 { margin-top: 24px; font: 700 clamp(44px, 5.9vw, 84px)/0.96 var(--display); font-stretch: 118%; letter-spacing: -0.035em; }
+.hero h1 { margin-top: 24px; font: 700 clamp(44px, 5.9vw, 84px)/0.96 var(--display); font-stretch: 118%; letter-spacing: -0.02em; }
 .hero h1 .quiet { color: var(--field-muted); font-weight: 500; }
 .hero .lede { margin-top: 24px; font-size: 20px; line-height: 1.5; color: var(--field-muted); max-width: 30em; }
 .hero .now { margin-top: 20px; color: var(--field-muted); line-height: 1.6; max-width: 46em; }
@@ -136,7 +136,7 @@ main { overflow-x: clip; }
 section.block { padding-block: var(--sec) 0; }
 #experience { padding-bottom: var(--sec); }
 .head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid var(--ink); }
-.head h2 { font: 700 clamp(34px, 5.2vw, 68px)/0.95 var(--display); font-stretch: 115%; letter-spacing: -0.03em; }
+.head h2 { font: 700 clamp(28px, 3.4vw, 44px)/1 var(--display); font-stretch: 115%; letter-spacing: -0.03em; }
 .head p { color: var(--muted); }
 @media (max-width: 760px) { .head { margin-bottom: 24px; } }
 
@@ -153,7 +153,7 @@ section.block { padding-block: var(--sec) 0; }
 .record .result { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); font-size: 16px; color: var(--muted); display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; align-items: baseline; }
 .record .result li { display: contents; }
 .record .result li.rl { display: block; grid-column: 1 / -1; font: 500 12px/1 var(--mono); letter-spacing: .02em; text-transform: uppercase; }
-.record .result b { font: 600 clamp(30px, 3.4vw, 44px)/1.1 var(--mono); color: var(--amber-ink); }
+.record .result b { font: 700 clamp(30px, 3.4vw, 44px)/1.1 var(--display); font-stretch: 112%; letter-spacing: -0.03em; color: var(--amber-ink); }
 .record .ctx { margin-bottom: 24px; }
 .record ul { display: grid; gap: 14px; }
 .record li { display: grid; grid-template-columns: 22px 1fr; gap: 14px; }
@@ -189,12 +189,12 @@ section.projects { padding-bottom: var(--sec); }
 .pgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .pcard { background: var(--field-2); border: 1px solid var(--field-line); border-radius: 10px; padding: 32px; display: grid; gap: 14px; align-content: start; transition: border-color .3s var(--ease), transform .3s var(--ease); }
 @media (hover: hover) { .pcard:hover { border-color: var(--amber); transform: translateY(-3px); } }
-.pcard h3 { font: 700 clamp(28px, 3.4vw, 42px)/1.05 var(--display); font-stretch: 115%; letter-spacing: -0.03em; }
+.pcard h3 { font: 700 clamp(22px, 2.3vw, 30px)/1.1 var(--display); font-stretch: 112%; letter-spacing: -0.02em; white-space: nowrap; }
 .pcard p { color: var(--field-muted); max-width: 34em; }
 .pcard .prole { color: var(--field-ink); font-weight: 600; }
 .chip { justify-self: start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--amber); color: var(--amber); font: 500 12px/1 var(--mono); letter-spacing: .02em; }
 .chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
-@media (max-width: 760px) { .pgrid { grid-template-columns: 1fr; } .pcard { padding: 24px; } }
+@media (max-width: 760px) { .pgrid { grid-template-columns: 1fr; } .pcard { padding: 24px; } .pcard h3 { white-space: normal; } }
 
 /* Skills */
 .kit { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
@@ -224,7 +224,7 @@ section.projects { padding-bottom: var(--sec); }
 .contact { margin-top: var(--sec); padding-block: 88px; }
 .contact .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 56px; align-items: center; }
 .portrait { display: block; width: 150px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; border-radius: 10px; border: 1px solid var(--field-line); margin-bottom: 32px; }
-.contact h2 { font: 700 clamp(36px, 5.6vw, 76px)/0.98 var(--display); font-stretch: 118%; letter-spacing: -0.035em; }
+.contact h2 { font: 700 clamp(30px, 4vw, 54px)/1.02 var(--display); font-stretch: 118%; letter-spacing: -0.035em; }
 .contact .grid > div > p { margin-top: 20px; color: var(--field-muted); font-size: 18px; max-width: 30em; }
 .slip { background: var(--field-2); border: 1px solid var(--field-line); border-radius: 10px; padding: 24px; display: grid; gap: 20px; }
 .slip .row2 { display: grid; gap: 8px; }
@@ -276,7 +276,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a class="btn solid sm" href="Olutayo_Solana_CV.pdf" download>Download CV <svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+        <a class="btn line sm" href="Olutayo_Solana_CV.pdf" download>Download CV <svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
       </nav>
     </div>
     <span class="progress" aria-hidden="true"></span>
@@ -288,7 +288,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       <div class="wrap grid">
         <div class="intro">
           <p class="status mono"><img class="me" src="headshot-sm.jpg" width="44" height="44" alt="Olutayo Solana"><span class="led live" aria-hidden="true"></span>Open to roles and contracts · Dublin · Remote worldwide</p>
-          <h1>Product manager for banking <span class="quiet">and payments.</span></h1>
+          <h1>Product manager for banking and payments.</h1>
           <p class="lede">I've taken mobile banking, an ML credit platform and three new market launches from idea to adoption. Now I'm looking for the next one.</p>
           <p class="now mono">MSc IT Enabled Innovation, Maynooth, 2026 · Product lead on Satya, an AI accounting product</p>
           <div class="cta">
@@ -309,9 +309,9 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <ul>
       <li><b>5</b><span>banks on one Kafka and machine-learning data platform</span></li>
       <li><b>3</b><span>new markets launched: Ghana, Côte d'Ivoire and Kenya</span></li>
-      <li><b>~30</b><span>third-party APIs specified and tested in Postman</span></li>
+      <li><b>+20%</b><span>engagement at Interswitch, from recurring payments and wallet features</span></li>
     </ul>
-    <p class="stack mono">A/B tests and funnels in Mixpanel and Amplitude · ~12 MVPs launched</p>
+    <p class="stack mono">30+ APIs specified · ~12 MVPs launched · A/B tests and funnels in Mixpanel and Amplitude</p>
   </div>
 </section>
 
@@ -327,12 +327,13 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
             <h3>Interswitch</h3>
             <p class="role">Product Owner</p>
             <p class="ctx">African digital payments company. Client mobile banking apps served ~200K to 3M users each.</p>
-            <ul class="result" aria-label="Results"><li class="rl">Contributed to</li><li><b class="num">+20%</b><span>engagement</span></li><li><b class="num">−11%</b><span>churn</span></li><li><b class="num">+15%</b><span>satisfaction</span></li></ul>
+            <ul class="result" aria-label="Results"><li class="rl">Results</li><li><b class="num">+20%</b><span>engagement</span></li><li><b class="num">−11%</b><span>churn</span></li><li><b class="num">+15%</b><span>satisfaction</span></li></ul>
           </div>
           <ul>
             <li><svg class="ic" aria-hidden="true"><use href="#ic-flag"/></svg><span>Owned strategy, roadmap and delivery for <b>4 Scrum teams</b>; shipped recurring payments and digital wallet features that lifted engagement <b>20%</b>.</span></li>
             <li><svg class="ic" aria-hidden="true"><use href="#ic-data"/></svg><span>Deployed a Kafka, ETL and machine-learning data platform for personalised credit checks to <b>5 banking clients</b>.</span></li>
             <li><svg class="ic" aria-hidden="true"><use href="#ic-plug"/></svg><span>Specified <b>~30 third-party API integrations</b>, tested in Postman.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#ic-zap"/></svg><span>Tracked engagement, churn and satisfaction against customer feedback and usage data, and turned repeated usability-testing cycles into prioritised fixes: churn down <b>11%</b>, satisfaction up <b>15%</b>.</span></li>
             <li><svg class="ic" aria-hidden="true"><use href="#ic-rocket"/></svg><span>Launched <b>~12 MVPs</b> and ran A/B tests in Mixpanel and Amplitude.</span></li>
           </ul>
         </div>
@@ -346,7 +347,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
             <h3>OmniBiz Africa</h3>
             <p class="role">Product Manager, Demand</p>
             <p class="ctx">B2B FMCG commerce platform serving 90,000+ retailers.</p>
-            <ul class="result" aria-label="Results"><li class="rl">Delivered</li><li><b class="num">+8.5%</b><span>monthly active users</span></li><li><b class="num">~40 hrs</b><span>saved a week</span></li></ul>
+            <ul class="result" aria-label="Results"><li class="rl">Results</li><li><b class="num">+8.5%</b><span>monthly active users</span></li><li><b class="num">40 hrs</b><span>saved a week, approx.</span></li></ul>
           </div>
           <ul>
             <li><svg class="ic" aria-hidden="true"><use href="#ic-pin"/></svg><span>Led expansion into <b>Ghana, Côte d'Ivoire and Kenya</b>: requirements, UAT and business readiness.</span></li>
@@ -399,11 +400,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <h3>Certifications</h3>
         <ul class="ledger compact">
           <li><time>Oct 2021</time><div><b>Product Manager Certificate</b><span>Product School</span></div></li>
-          <li><time>Sep 2021</time><div><b>Scrum Fundamentals</b><span>Scrum Alliance</span></div></li>
           <li><time>Jul 2021</time><div><b>Data Product Manager</b><span>Udacity</span></div></li>
           <li><time>Apr 2021</time><div><b>Azure AI Fundamentals</b><span>Microsoft</span></div></li>
-          <li><time>Jan 2021</time><div><b>IBM Data Science</b><span>Coursera</span></div></li>
-          <li><time>Dec 2020</time><div><b>Coding for Managers</b><span>Product School</span></div></li>
         </ul>
       </div>
     </div>
@@ -422,7 +420,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <span class="k mono">Email</span>
         <div class="email-row">
           <span class="email" id="email">demisolana24@gmail.com</span>
-          <button class="btn solid sm" id="copy" type="button" aria-live="polite">Copy email</button>
+          <button class="btn line sm" id="copy" type="button" aria-live="polite">Copy email</button>
         </div>
       </div>
       <div class="row2">
@@ -473,50 +471,6 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   }, { rootMargin: '-40% 0px -55% 0px' });
   Object.keys(links).concat('skills').forEach(function (k) { var el = document.getElementById(k); if (el) io.observe(el); });
   var hero = document.querySelector('.hero'); if (hero) io.observe(hero);
-})();
-
-// Figures chase their scroll target slowly (about 1s to settle), so counting stays unhurried however fast you scroll.
-function makeRunner(figs) {
-  var running = false;
-  return function run() {
-    if (running) return; running = true;
-    (function step() {
-      var busy = false;
-      figs.forEach(function (f) {
-        f.c += (f.t - f.c) * 0.05;
-        if (Math.abs(f.t - f.c) < 0.0015) f.c = f.t; else busy = true;
-        f.el.textContent = f.pre + (f.end * f.c).toFixed(f.dec || 0) + f.post;
-      });
-      if (busy) requestAnimationFrame(step); else running = false;
-    })();
-  };
-}
-
-// Scroll-linked motion: result figures run up as each card scrolls in (and back down on the way out).
-(function () {
-  if (!document.documentElement.classList.contains('js')) return;
-  var figs = [], run = makeRunner(figs);
-  document.querySelectorAll('.record').forEach(function (rec) {
-    rec.querySelectorAll('.result .num').forEach(function (el) {
-      var m = el.textContent.match(/^([^\d]*)([\d.]+)(.*)$/); if (!m) return;
-      var sr = document.createElement('span'); sr.className = 'sr'; sr.textContent = el.textContent; el.after(sr); el.setAttribute('aria-hidden', 'true');
-      figs.push({ el: el, i: figs.length, c: 0, t: 0, pre: m[1], end: parseFloat(m[2]), dec: (m[2].split('.')[1] || '').length, post: m[3] });
-    });
-  });
-  function clamp(x) { return Math.max(0, Math.min(1, x)); }
-  var queued = false;
-  function frame() {
-    queued = false;
-    var vh = innerHeight;
-    figs.forEach(function (f) {
-      var p = clamp((vh * 0.98 - f.el.getBoundingClientRect().top - (f.i % 3) * 16) / (vh * 0.55)), e = 1 - Math.pow(1 - p, 2);
-      f.t = e;
-    });
-    run();
-  }
-  function queue() { if (!queued) { queued = true; requestAnimationFrame(frame); } }
-  addEventListener('scroll', queue, { passive: true }); addEventListener('resize', queue);
-  frame();
 })();
 
 // Cursor ring (mouse only): the system cursor stays; a ring wraps links, buttons and the globe.
@@ -718,7 +672,7 @@ function makeRunner(figs) {
       var on = STEPS[step].at === k || (k === 'LOS' && STEPS[step].arc);
       if (c.home) { ctx.strokeStyle = col.ink; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(s[0], s[1], 7, 0, 6.2832); ctx.stroke(); }
       ctx.fillStyle = c.home ? col.ink : col.amber; ctx.beginPath(); ctx.arc(s[0], s[1], on ? 4 : 3, 0, 6.2832); ctx.fill();
-      ctx.textAlign = c.dx < 0 ? 'right' : 'left'; ctx.fillStyle = on ? col.ink : col.muted; ctx.globalAlpha = on ? 1 : 0.85;
+      ctx.textAlign = c.dx < 0 ? 'right' : 'left'; ctx.fillStyle = on ? col.ink : col.muted; ctx.globalAlpha = 1;
       ctx.lineJoin = 'round'; ctx.lineWidth = 4; ctx.strokeStyle = col.field; ctx.strokeText(c.name, s[0] + c.dx, s[1] + c.dy); ctx.fillText(c.name, s[0] + c.dx, s[1] + c.dy); ctx.globalAlpha = 1;
     });
   }
